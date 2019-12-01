@@ -1,3 +1,9 @@
-.navFont {
-	font-size: 25px;
+
+.mainScreen {
+   height: 120vh;
+    width: 100vw;
+}
+
+.homeScreen {
+	background-color: #595959;
 }
