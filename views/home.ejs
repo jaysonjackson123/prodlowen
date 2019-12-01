@@ -2,25 +2,40 @@
 <html>
     <head>
         <title>Lowen Beats</title>
-		<link href="/stylesheets/app.css" rel="stylesheet" type="text/css">
+		
 		<link href="/stylesheets/bootstrap.css" rel="stylesheet" type="text/css">
+		<link href="/stylesheets/app.css" rel="stylesheet" type="text/css">
+
     </head>
-	
-	
-	
     <body>
 	
-	<nav class="navbar navbar-dark bg-dark">
+	<nav class="navbar fixed-top nbbg">
 		<a class="navbar-brand">Navbar</a>
-		
-		
-		<a class="nav-link active" href="#">Active</a>
-		
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+		</button>
+
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Features</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Pricing</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link disabled" href="#">Disabled</a>
+				</li>
+			</ul>
+		</div>
 	</nav>
 	
-
 	<div class="mainScreen container">
-		<h1>Main Screen h1</h1>
+		<h1>Main Sc h1</h1>
 	</div>
 	
 	
@@ -32,9 +47,14 @@
 	<div class="services container">
 		<h1>services h1</h1>
 	</div>
+	
+	<div class="bottomFooter container">
+		<h1>footer h1</h1>
+
+		<%	for (i = 0; i < 30; i++) { %>
+  			<p>Hello, you're on run number: <%- i %></p>
+		<% } %>
+	</div>
 
     </body>
-	
-	
-	
 </html>
