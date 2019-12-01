@@ -9,7 +9,7 @@ app.get("/",function(req,res){
 	res.render("home");
 });
 
-//This function is for Heroku purposes
+// This function is for Heroku purposes
 app.listen(process.env.PORT || 5000)
 
 
