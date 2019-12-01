@@ -1,9 +1,22 @@
-
 .mainScreen {
    height: 120vh;
-    width: 100vw;
-}
+ }
 
 .homeScreen {
-	background-color: #595959;
+	/*background-color: #595959;*/
 }
+
+body {
+  background: linear-gradient(#FFFFFF 0%, #8CDCD8 50%, #13477B 95%);
+}
+
+
+.centerOS {
+	text-align: center;
+	margin-top: 40vh;
+}
+
+div.row.mt-5 {
+	height: 120vh;
+}
+
