@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 .mainScreen {
    height: 120vh;
  }
@@ -20,3 +22,7 @@ div.row.mt-5 {
 	height: 120vh;
 }
 
+.monsterrat {
+	font-family: 'Montserrat', sans-serif;
+	font-style: : 'Montserrat';
+}
