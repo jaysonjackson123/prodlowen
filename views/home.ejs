@@ -5,7 +5,6 @@
 		
 		<link href="/stylesheets/bootstrap.css" rel="stylesheet" type="text/css">
 		<link href="/stylesheets/app.css" rel="stylesheet" type="text/css">
-		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
     </head>
     <body>
@@ -16,7 +15,7 @@
         		<a class="nav-link navFont" href="#">Home <span class="sr-only">(current)</span></a>
       		</li>
       		<li class="nav-item mx-5">
-        		<a class="nav-link navFont" href="#">Library</a>
+        		<a class="nav-link navFont" href="/library">Library</a>
       		</li>
       		<li class="nav-item">
         		<a class="nav-link navFont" href="#">Contact</a>
@@ -43,27 +42,27 @@
 	
 	
 	<div class="resources container-fluid mainScreen mx-auto">
-		<form class="monsterrat">
+		<form class="monsterrat" action="/library/new" method="post">
 			<h1> Input a song. </h1>
 			<div class="form-group">
     			<label for="inputSongTitle">Song Title</label>
-    			<input type="text" class="form-control" id="inputSongTitle" aria-describedby="songHelp" placeholder="Title">
+    			<input type="text" class="form-control" value="inputSongTitle" id="inputSongTitle" aria-describedby="songHelp" placeholder="Title" required>
     			<small id="songHelp" class="form-text text-muted">It does not have to be that great.</small>
   			</div>
 
   			<div class="form-group">
     			<label for="inputSongDesc">Song Description</label>
-    			<textarea class="form-control" id="inputSongDesc" rows="3" placeholder="Description."></textarea>
+    			<textarea class="form-control" value="inputSongDesc" id="inputSongDesc" rows="3" placeholder="Description."></textarea>
   			</div>
 
   			<div class="form-group">
    				<label for="inputSongFile">Browse for your file</label>
-    			<input type="file" class="form-control-file" id="inputSongFile">
+    			<input type="file" class="form-control-file" value="inputSongFile"id="inputSongFile" required>
   			</div>
 
   			
   			<button type="submit" class="btn btn-primary">Submit</button>
-		</form> Elouise69
+		</form> 
 	</div>
 	
 	

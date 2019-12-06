@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Lowen Beats</title>
+    
+    <link href="/stylesheets/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="/stylesheets/app.css" rel="stylesheet" type="text/css">
+
+    </head>
+    <body>
+  
+  <nav class="navbar navbar-expand fixed-top navbar-light">
+    <ul class="navbar-nav mx-auto">
+          <li class="nav-item active">
+            <a class="nav-link navFont" href="/">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item mx-5">
+            <a class="nav-link navFont" href="/library">Library</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link navFont" href="#">Contact</a>
+          </li>
+      </ul>
+  </nav>
+  
+  <div class="homeScreen container-fluid mainScreen">
+    <div class="row mt-5">
+
+      <span class="col-1"></span>
+
+      <div class="col-10">
+
+        <div class="mt-5 mb-5">
+          <h2>That man made music,</h2>
+          <h1>and he hasnt stopped:</h1>
+        </div>
+
+        <!-- Displaying Songs -->
+        <div>
+          <h1>beforeFunctions</h1>
+          <% songs.forEach(function(song){ %>
+          <h1><%= song.songTitle %></h1>
+          <% }) %>
+        </div>
+
+
+
+      </div>
+
+      <span class="col-1"></span>
+
+    </div>
+  </div>
+  
+  
+
+
+
+
+    </body>
+</html>

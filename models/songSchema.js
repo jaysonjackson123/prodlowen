@@ -1,13 +1,12 @@
 var mongoose = require("mongoose");
 
 var songSchema = new mongoose.Schema({
-	username: String,
-	password: String,
-	song-url: String,
-	art-url: String
+	songTitle: String,
+	songDesc: String,
+	songFile: String
 });
 
 
 
 //Exports a model of the mongoose schema SongSchema, passed as Song
-module.exports = mongoose.model("Song",SongSchema);
+module.exports = mongoose.model("Song",songSchema);
