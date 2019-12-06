@@ -11,6 +11,3 @@ var songSchema = new mongoose.Schema({
 
 //Exports a model of the mongoose schema SongSchema, passed as Song
 module.exports = mongoose.model("Song",SongSchema);
-
-//
-

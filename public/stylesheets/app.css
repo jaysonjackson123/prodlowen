@@ -1,17 +1,17 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
 
+.monsterrat {
+	font-family: 'Montserrat', sans-serif;
+	font-style: : 'Montserrat';
+}
+
 .mainScreen {
    height: 120vh;
  }
 
-.homeScreen {
-	/*background-color: #595959;*/
-}
-
 body {
   background: linear-gradient(#FFFFFF 0%, #8CDCD8 50%, #13477B 95%);
 }
-
 
 .centerOS {
 	text-align: center;
@@ -22,7 +22,3 @@ div.row.mt-5 {
 	height: 120vh;
 }
 
-.monsterrat {
-	font-family: 'Montserrat', sans-serif;
-	font-style: : 'Montserrat';
-}

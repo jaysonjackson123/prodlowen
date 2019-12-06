@@ -11,22 +11,27 @@ passportLocalMongoose = require("passport-local-mongoose");
 // Sets what file type is default
 app.set('view engine','ejs');
 
-// Sets what folder to look for things in
+// Sets main directory
 app.use(express.static(__dirname + '/public'));
 
-// Connecting to database locally
+// Connecting to database *locally*
 mongoose.connect("mongodb://localhost/prodlowen");
 
-// Main Screen
+// *****ROUTES
 app.get("/",function(req,res){
 	res.render("home");
 });
 
-// Creating a new song
 
 
+// *****Server listen port 
 
-// Server listen port
+// Use for live
+/*
+app.listen(process.env.PORT || 5000)
+ */
+
+// Use for local
 var server = app.listen(8080,function() {
    var host = server.address().address
    var port = server.address().port  
